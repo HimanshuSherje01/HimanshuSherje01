@@ -1,0 +1,65 @@
+<svg width="1200" height="130" viewBox="0 0 1200 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14" />
+      <stop offset="50%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#080c14" />
+    </linearGradient>
+
+    <!-- Radial Glow Center -->
+    <radialGradient id="radial-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.14" />
+      <stop offset="60%" stop-color="#0284c7" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#080c14" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Subtle Dot Grid -->
+    <pattern id="dot-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#38bdf8" fill-opacity="0.22" />
+    </pattern>
+
+    <!-- Transit Line Gradient -->
+    <linearGradient id="transit-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="25%" stop-color="#38bdf8" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.7" />
+      <stop offset="75%" stop-color="#38bdf8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Border Glow -->
+    <linearGradient id="border-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#30363d" stop-opacity="0" />
+      <stop offset="50%" stop-color="#58a6ff" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#30363d" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base Card -->
+  <rect width="1200" height="130" rx="10" fill="url(#bg)" />
+  <rect width="1200" height="130" rx="10" fill="url(#radial-glow)" />
+  <rect width="1200" height="130" rx="10" fill="url(#dot-grid)" opacity="0.6" />
+
+  <!-- Abstract Network Lines -->
+  <g stroke-linecap="round" opacity="0.75">
+    <path d="M 80 65 L 340 65 L 390 35 L 610 35 L 650 65 L 870 65 L 910 95 L 1120 95" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="3 4" stroke-opacity="0.35" />
+    <path d="M 180 95 L 420 95 L 460 65 L 740 65 L 780 35 L 1020 35" stroke="#818cf8" stroke-width="1.2" stroke-opacity="0.25" />
+    <path d="M 450 65 L 750 65" stroke="url(#transit-line)" stroke-width="2" />
+  </g>
+
+  <!-- Network Nodes -->
+  <g fill="#0d1117" stroke="#38bdf8" stroke-width="1.5">
+    <circle cx="390" cy="35" r="3" />
+    <circle cx="610" cy="35" r="3" />
+    <circle cx="650" cy="65" r="4.5" fill="#38bdf8" fill-opacity="0.8" />
+    <circle cx="460" cy="65" r="3" />
+    <circle cx="740" cy="65" r="3" />
+    <circle cx="780" cy="35" r="3" />
+    <circle cx="870" cy="65" r="3" />
+  </g>
+
+  <!-- Edge Borders -->
+  <rect x="0" y="0" width="1200" height="1" fill="url(#border-glow)" />
+  <rect x="0" y="129" width="1200" height="1" fill="url(#border-glow)" />
+</svg>
